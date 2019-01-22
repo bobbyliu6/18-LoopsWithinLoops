@@ -213,8 +213,7 @@ def run_test_print_characters():
 def print_characters(sequence_of_strings):
     for j in range(len(sequence_of_strings)):
         for k in range(len(sequence_of_strings[j])):
-            print(sequence_of_strings[j][k],end='')
-        print()
+            print(sequence_of_strings[j][k])
     """
     Prints all the characters in the sequence of strings,
     but each character on ITS OWN LINE.  For example,
@@ -234,7 +233,7 @@ def print_characters(sequence_of_strings):
     Precondition:  the given argument is a sequence of strings.
     """
     # ------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # DONE: 5. Implement and test this function.
     #  ** READ THE TESTS that have been written for you (ABOVE).
     #  ** ASK QUESTIONS if you do not understand the TESTS (ABOVE).
     # ------------------------------------------------------------------
@@ -269,6 +268,11 @@ def run_test_print_characters_slanted():
 
 
 def print_characters_slanted(sequence_of_strings):
+    for j in range(len(sequence_of_strings)):
+        for k in range(len(sequence_of_strings[j])):
+            for i in range(k):
+                print(' ',end='')
+            print(sequence_of_strings[j][k])
     """
     Same as the previous problem, but each string 'slants'.
     For example, if the given argument is ['hi', 'bye', 'a_tie!'],
@@ -287,7 +291,7 @@ def print_characters_slanted(sequence_of_strings):
     Precondition:  the given argument is a sequence of strings.
     """
     # ------------------------------------------------------------------
-    # TODO: 6. Implement and test this function.
+    # DONE: 6. Implement and test this function.
     #  ** READ THE TESTS that have been written for you (ABOVE).
     #  ** ASK QUESTIONS if you do not understand the TESTS (ABOVE).
     #
